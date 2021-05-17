@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hp2-header {
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+header.hp2-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background-image: url(../imgs/js.jpeg);
+    filter: brightness(0.8);
+}
+
+header.hp2-header img.dp {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 999;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.section {
+    padding: 0px 15px;
+}
+
+.section.nav ul.list {
+    margin-top: 20px;
+}
