@@ -1,0 +1,46 @@
+* { margin: 0; }
+
+body {
+    font-family: tahoma;
+    background-color: burlywood;
+    color: #fff;
+    padding: 30px 45px;
+}
+
+.main-color {
+    color:cadetblue;
+}
+
+.my-name {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+p.description span {
+    color: yellow;
+    font-weight: 600;
+}
+
+hr {
+    margin: 5px 0px;
+}
+
+p, li {
+    font-size: 14px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+.movies + ul {
+    list-style: decimal;
+}
+
+.movies + ul li span {
+    color: red;
+}
