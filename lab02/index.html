@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grades Excercise</title>
+        <meta name="description" content="Grades Excercise" />
+        <meta charset="utf-8" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+    <body class="grades-home-page">
+        <header class="page-header">
+            <h3 class="form-title">Grades</h3>
+        </header>
+
+        <div class="grades-form-wrapper">
+            <form class="grades-form" action="http://mumstudents.org/params.php" method="post">
+                <div class="field-wrapper">
+                    <label>Name</label>
+                    <input type="text" name="st-name" />
+                </div>
+
+                <div class="field-wrapper">
+                    <label>ID</label>
+                    <input type="text" name="st-id" />
+                </div>
+
+                <div class="field-wrapper">
+                    <label>Assignment</label>
+                    <select name="assignment">
+                        <option value="lab00">Lab00</option>
+                        <option value="lab01">Lab01</option>
+                        <option value="lab02">Lab02</option>
+                        <option value="lab03">Lab03</option>
+                        <option value="lab04">Lab04</option>
+                        <option value="lab05">Lab05</option>
+                    </select>
+                </div>
+
+                <div class="field-wrapper">
+                    <label>Entry:</label>
+                </div>
+
+                <div class="field-wrapper radio-wrapper">
+                    <div class="radio-option">
+                        <input type="radio" name="st-entry" value="feb-2021" />
+                        <label>Feb 2021</label>
+                        
+                        <div class="clear-both"></div>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="st-entry" value="may-2021" />
+                        <label>May 2021</label>
+                        
+                        <div class="clear-both"></div>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="st-entry" value="aug-2021" />
+                        <label>Aug 2021</label>
+                        
+                        <div class="clear-both"></div>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="st-entry" value="nov-2021" />
+                        <label>Nov 2021</label>
+                        
+                        <div class="clear-both"></div>
+                    </div>
+
+                </div>
+
+                <div class="field-wrapper">
+                    
+                    <p><input type="checkbox" name="st-confirmation" value="1" />I confirm that I am not lying and really am
+                        only looking up my own grade.</p>
+                </div>
+
+                <div class="field-wrapper submit">
+                    <input class="btn btn-submit" type="submit" name="grades-search-submit" />
+                </div>
+            </form>
+        </div>
+    </body>
+
+    
+    <a href="http://validator.w3.org/nu/?doc=https://mtayyab247.github.io/cs472/lab02/index.html"> <img
+src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+alt="html validator"/></a>
+</html>
