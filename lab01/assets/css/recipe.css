@@ -23,3 +23,16 @@ body.recipe-page blockquote p {
     background-color: yellow;
 }
 
+.links-wrapper a {
+    color: #a4a400;
+    display: block;
+}
+
+.copyright-wrapper p {
+    width: 221px;
+    text-align: end;
+}
+
+.validation-wrapper p {
+    display: inline-block;
+}

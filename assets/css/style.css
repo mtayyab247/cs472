@@ -15,7 +15,7 @@ header.hp2-header::after {
     left: 0;
     width: 100%;
     height: inherit;
-    background-image: url(../imgs/js.jpeg);
+    background-image: url(../img/js.jpeg);
     filter: brightness(0.8);
 }
 
