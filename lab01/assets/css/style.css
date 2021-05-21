@@ -37,10 +37,6 @@ ul {
     margin-top: 10px;
 }
 
-.movies + ul {
-    list-style: decimal;
-}
-
 .movies + ul li span {
     color: red;
 }

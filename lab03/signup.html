@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nerdluv Sign-up Page </title>
+        <meta name="description" content="Nerdluv Sign-up Page " />
+        <meta charset="utf-8" />
+        <link href="assets/css/signup.css" rel="stylesheet" />
+    </head>
+    <body class="signup-page">
+
+        <div class="signup-form-wrapper">
+            <form class="signup-form" action="signup.php" method="post">
+                <div class="field-wrapper form-title">
+                    <label>New User Signup:</label>
+                </div>
+                <div class="field-wrapper name">
+                    <label>Name:</label>
+                    <div class="field">
+                        <input type="text" name="st-name" />
+                    </div>
+                </div>
+
+                <div class="field-wrapper gender">
+                    <label>Gender:</label>
+                    <div class="field">
+                        <input type="radio" name="gender" value="male" />
+                        <label>Male</label>
+                        <input type="radio" name="gender" value="female" />
+                        <label>Female</label>
+                    </div>
+                </div>
+
+                <div class="field-wrapper age">
+                    <label>Age:</label>
+                    <div class="field">
+                        <input type="number" min="1" name="age" />
+                    </div>
+                </div>
+
+                <div class="field-wrapper pt">
+                    <label>Personality Type:</label>
+                    <div class="field">
+                        <input type="text" name="pt" />
+                        <p class="pt">(<span>Don't know your personality type?</span>)</p>
+                    </div>
+                </div>
+
+                <div class="field-wrapper fos">
+                    <label>Favorte OS:</label>
+                    <div class="field">
+                        <select name="fos">
+                            <option value="win">Windows</option>
+                            <option value="linux">Linux</option>
+                            <option value="macos">MacOS</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-wrapper sa">
+                    <label>Seeking Age:</label>
+                    <div class="field">
+                        <input type="number" min="1" name="min" placeholder="min" />
+                        <p>to</p>
+                        <input type="number" min="2" name="max" placeholder="max" />
+                    </div>
+                </div>
+
+                <div class="field-wrapper signup">
+                    <input class="btn btn-signup" type="submit" name="signup" value="Sign Up" />
+                </div>
+            </form>
+        </div>
+
+        <a href="http://validator.w3.org/nu/?doc=https://mtayyab247.github.io/cs472/lab02/index.html"><img
+            src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+            alt="html validator"/></a>
+    </body>
+</html>

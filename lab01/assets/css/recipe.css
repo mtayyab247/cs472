@@ -1,0 +1,25 @@
+* { margin: 0; }
+
+body.recipe-page {
+    padding: 20px 0px;
+}
+
+.heading {
+    background-color: #F0F0F0;
+    padding: 5px;
+    color: #A4A400;
+    text-decoration: underline;
+}
+
+.heading.page-heading {
+    text-align: center;
+}
+
+body.recipe-page blockquote {
+    padding: 15px 40px;
+}
+
+body.recipe-page blockquote p {
+    background-color: yellow;
+}
+
