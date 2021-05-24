@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Timer Exercises</title>
+	</head>
+
+	<body>
+        <h1>Javascript Timer Exercises</h1>
+		<p><b>1. What is the difference between the following 2 statements?
+            setTimeout(booyah, 2000);
+            setTimeout(booyah(), 2000);
+            </b></p>
+		<p>In the first line the booyah will be called after 2000ms while in the second line it
+             will be called without waiting the 2000ms</p>
+
+        <hr />
+
+        <p><b>2. What do the following 2 alerts display (answer without running the code)?
+            var myfunc = function(a, x) {
+             return a * x;
+            };
+            var x = myfunc(2, 3);
+            var y = myfunc;
+            alert(x);
+            alert(y(2,3)); </b></p>
+        <p>Both display 6</p>
+
+        <hr />
+
+        <p><b>3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up
+             after 2 seconds that
+            says “BOOYAH!”
+            setTimeout(booyah1, 2000);
+            setTimeout(booyah2(), 2000);</b></p>
+        <p>
+            <pre>
+                function booyah1() {
+                    alert("Booyah1");
+                }
+
+                function booyah2() {
+                    setTimeout(function() {alert("Booyah2")}, 2000);
+                }
+            </pre>
+        </p>
+
+        <hr />
+
+        <p><b>
+            4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+        </b></p>
+        <p>Unobtrusive javascript mean we need to separate js from html as much as possible. 
+            This will seperate the presentation and the behaviour. It will make our code more cleaner and
+            more manageable.<br>
+            Also some browsers don't support js so the page will work if js don't run and user won't see
+            any errors. Other js files can be imported to js files and used.
+        </p>
+	</body>
+</html>
