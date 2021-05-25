@@ -1,4 +1,4 @@
-* { margin: 0; }
+
 
 body.recipe-page {
     padding: 20px 0px;
@@ -29,10 +29,14 @@ body.recipe-page blockquote p {
 }
 
 .copyright-wrapper p {
-    width: 221px;
+    width: 230px;
     text-align: end;
 }
 
+.validation-wrapper,
+.copyright-wrapper {
+    text-align: right;
+}
 .validation-wrapper p {
     display: inline-block;
 }
