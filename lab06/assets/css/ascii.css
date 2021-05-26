@@ -1,0 +1,56 @@
+* {
+    font-family: tahoma;
+}
+
+.game-wrapper {
+    background-color: #CCCCFF;
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 20px;
+}
+
+.title-wrapper {
+    padding: 5px;
+}
+.title-wrapper h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.animation-viewer-wrapper {
+    padding: 0px 40px;
+}
+.animation-viewer-wrapper #animation-viewer {
+    width: 100%;
+    height: 400px;
+}
+
+#controls-wrapper {
+    width: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#controls-wrapper fieldset {
+    width: 15%;
+    display: inline-block;
+    border: 5px solid;
+}
+
+#controls-wrapper fieldset legend {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#validator {
+    float: right;
+    margin-top: 15px;
+}
+
+#validator a {
+    display: block;
+}
+
+.clear-both {
+    clear: both;
+}
