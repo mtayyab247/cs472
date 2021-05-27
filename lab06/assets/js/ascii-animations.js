@@ -67,26 +67,30 @@ function stopAnimation() {
     speed.disabled = false;
 }
 
+function makeSize(size) {
+    textBox.style.fontSize = size + 'pt';
+}
+
 function changeSize() {
     let fontSize = size.value;
     switch (fontSize) {
         case "tiny":
-            textBox.style.fontSize = "7pt";
+            makeSize(7);
             break;
         case "small":
-            textBox.style.fontSize = "10pt";
+            makeSize(10);
             break;
         case "medium":
-            textBox.style.fontSize = "12pt";
+            makeSize(12);
             break;
         case "large":
-            textBox.style.fontSize = "16pt";
+            makeSize(16);
             break;
         case "extralarge":
-            textBox.style.fontSize = "24pt";
+            makeSize(24);
             break;
         case "xxl":
-            textBox.style.fontSize = "32pt";
+            makeSize(32);
             break;
     }
 }

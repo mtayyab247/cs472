@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Scope Exercises</title>
+	</head>
+
+	<body>
+        <h1>Javascript Scope Exercises</h1>
+		<p>1. Determine what this Javascript code will print out (without running it):
+            <pre>
+                x = 1;
+                var a = 5;
+                var b = 10;
+                var c = function(a, b, c) {
+                    var x = 10;
+                    document.write(x);
+                    document.write(a);
+                    var f = function(a, b, c) {
+                        b = a;
+                        document.write(b);
+                        b = c;
+                        var x = 5;
+                    }
+                    f(a,b,c);
+                    
+                    document.write(b);
+                }
+                c(8,9,10);
+                document.write(b);
+                document.write(x);
+                
+            </pre>
+
+            <p>output:
+                <pre>
+                    10
+                    8
+                    8
+                    9
+                    10
+                    1
+                </pre>
+            </p>
+        </p>
+
+        <hr />
+
+        <p>2. What is the difference between a method and function?</p>
+        <p>Ans: A method is just a function except it's associated with an object.</p>
+
+        <hr />
+
+        <p>3. What does 'this' refer to when used in a Java method?</p>
+        <p>Ans: this refers to the current object.</p>
+
+        <hr />
+
+        <p>4. What does 'this' refer to when used in a JavaScript method?</p>
+        <p>Ans: 
+            <ul>
+                <li>In a method, this refers to the owner object.</li>
+                <li>Alone, this refers to the global object.</li>
+                <li></li>In a function, this refers to the global object.</li>
+                <li></li>In a function, in strict mode, this is undefined.</li>
+                <li></li>In an event, this refers to the element that received the event.</li>
+                <li></li>Methods like call(), and apply() can refer this to any object.</li>
+            </ul>
+        </p>
+
+        <hr />
+
+        <p>5. What does 'this' refer to when used in a JavaScript constructor function?</p>
+        <p>Ans: In constructor the 'this' keyword refers to the newly created object.</p>
+
+        <hr />
+
+        <p>6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) 
+            containing keyword 'this'.
+            When f is called by x.f( ), what does 'this' refer to?</p>
+
+        <p>Ans: this refers to x</p>
+
+        <hr />
+
+        <p>7. What is a free variable in JavaScript?</p>
+        <p>Ans: A variable referred to by a function that is not one of its parameters or local variables.</p>
+
+        <hr />
+
+        <p>8. Create an object that has properties with name = "fred" and major="music" and a property 
+            that is a function
+            that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.</p>
+        <p>
+            <pre>
+                var obj = {
+                    name: "fred",
+                    major: ="music",
+                    checkSmall: function(a, b) {
+                        if(a > b) {
+                            return b;
+                        } else if(a == b) {
+                            let c = a+b;
+                            return c * c;
+                        } else {
+                            return a;
+                        }
+                    }
+                }
+            </pre>
+        </p>
+
+        <hr />
+
+        <p>9. Write Javascript code for creating three Employee objects using the "new" keyword and a
+             constructor function. Employee objects have the following fields: name, salary, position.</p>
+        <p>
+            <pre>
+                function Employee(name, salary, position) {
+                    this.name = name;
+                    this.salary = salary;
+                    this.position = position;   
+                }
+                var emp1 = new Employee("Awais", 1000, "QA");
+                var emp2 = new Employee("Tayyab", 1500, "Tester");
+                var emp3 = new Employee("Nayab", 2000, "Developer");
+            </pre>
+        </p>
+
+        <hr />
+
+        <p>10. Write a Javascript function that takes any number of input arguments and returns the product of the
+            arguments.</p>
+        <p>
+            <pre>
+                function multiply() {
+                    var total = 1;
+                    for(i in arguments) {
+                    	productResult *= arguments[i];
+                    }
+                    return total;
+                }
+            </pre>
+        </p>
+
+        <hr />
+
+        <p>11. Write an arrow function that returns the maximum of its three input arguments.</p>
+        <p>
+            <pre>
+                (x, y, z) => {
+                    let max = Math.max(x, y);
+                    return Math.max(max, z);
+                }
+            </pre>
+        </p>
+    </body>
+</html>
