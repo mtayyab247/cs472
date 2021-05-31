@@ -1,0 +1,94 @@
+
+
+* {
+    font-family: tahoma;
+}
+
+div#maze {
+    width: 500px;
+    background-color: white;
+    height: 250px;
+    border-top: 2px solid;
+    margin: 0 auto;
+    position: relative;
+}
+
+#status {
+    text-align: center;
+}
+
+.boundary {
+    background-color: #999;
+    box-sizing: border-box;
+}
+
+.boundary.b1 {
+    width: 152px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    border: 2px solid;
+    border-top: 0;
+}
+
+.boundary.b2 {
+    width: 202px;
+    height: 50px;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    border-bottom: 2px solid;
+    z-index: 9;
+}
+
+.boundary.b3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    border: 2px solid;
+    border-top: 0;
+}
+
+.boundary.b4 {
+    width: 100px;
+    height: 102px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    border: 2px solid;
+    border-bottom: 0;
+    z-index: 9;
+}
+
+.boundary.b5 {
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    position: absolute;
+    border: 2px solid;
+}
+
+div#start {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    position: absolute;
+    top: 155px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 30px;
+}
+
+div#end {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 155px;
+    right: 0;
+    background-color: #8888ff;
+    text-align: center;
+    line-height: 37px;
+    font-size: 30px;
+}
