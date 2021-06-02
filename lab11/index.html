@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Quiz III</title>
+        <style>
+            body img {width: 55%;}
+        </style>
+	</head>
+
+	<body>
+        <h1>jQuery Quiz III</h1>
+		<p><img src="q1.PNG" /></p>
+        <p>
+            <pre>
+                var pfText = $('p').first().text();
+                $('p').last().html(pfText);
+            </pre>
+        </p>
+
+        <hr />
+
+        <p><img src="q2.PNG" /></p>
+        <p>
+            <pre>
+                $('.level-2').children().css('background-color', 'red');
+            </pre>
+        </p>
+        <hr />
+
+        <p><img src="q3.PNG" /></p>
+        <p>
+            <pre>
+                $(".third-item").prev().css("background-color", "blue");
+            </pre>
+        </p>
+
+        <hr />
+
+        <p><img src="q4.PNG" /></p>
+        <p>
+            <pre>
+                $(".turkey").replaceWith("<li class='potatoes'><em>Mashed Potatoes</em></li>");
+            </pre>
+        </p>
+
+        <hr />
+
+        <p><img src="q5.PNG" /></p>
+        <p>
+            <pre>
+                $("span").parent().css("color","green");
+                $("span").parent().css("color","green");
+            </pre>
+        </p>
+        
+    </body>
+</html>
