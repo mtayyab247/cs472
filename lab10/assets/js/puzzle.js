@@ -16,8 +16,8 @@ jQuery(function($) {
     let drawPuzzle = function() {
         for (var i = 0; i < totalPuzzles; i++) {
             var div = divs[i];
-            div.style.backgroundPosition = posStatus[i].bgPos;
-            div.style.backgroundImage = posStatus[i].bg;
+            $(div).css("background-position", posStatus[i].bgPos);
+            $(div).css("background-image", posStatus[i].bg);
             $(div).text(posStatus[i].val);
             $(div).css('border-color', posStatus[i].borderC);
         }
@@ -35,14 +35,10 @@ jQuery(function($) {
             var y = (Math.floor(i / 4) * 100) ;
 
             // set basic style and background
-            div.className = "puzzlepiece";
-            div.style.left = x + 'px';
-            div.style.top = y + 'px';
-            
-            // store x and y for later
-            div.x = x;
-            div.y = y;
-            
+            $(div).addClass("puzzlepiece");
+            $(div).css("left", x + 'px');
+            $(div).css("top", y + 'px');
+
             if(i === totalPuzzles - 1) {
                 posStatus.push({
                     x: 3,
@@ -56,7 +52,7 @@ jQuery(function($) {
                 });
             } else {
                 
-                div.style.backgroundImage = bg;
+                $(div).css("backgroundImage", bg);
                 posStatus.push({
                     x: Math.floor(i / 4),
                     y: Math.floor(i % 4),
