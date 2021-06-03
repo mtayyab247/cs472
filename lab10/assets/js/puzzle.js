@@ -19,6 +19,7 @@ jQuery(function($) {
             div.style.backgroundPosition = posStatus[i].bgPos;
             div.style.backgroundImage = posStatus[i].bg;
             $(div).text(posStatus[i].val);
+            $(div).css('border-color', posStatus[i].borderC);
         }
     }
 
@@ -51,6 +52,7 @@ jQuery(function($) {
                     bgPos: null,
                     val: "",
                     index: totalPuzzles,
+                    borderC: 'transparent',
                 });
             } else {
                 
@@ -63,6 +65,7 @@ jQuery(function($) {
                     bgPos: -x + 'px ' + (-y) + 'px',
                     val: i + 1,
                     index: i + 1,
+                    borderC: 'black',
                 });
             }
         }
@@ -110,9 +113,24 @@ jQuery(function($) {
     }
     
     $.each(divs, function() {
+
+        // Click
         $(this).on('click', function() {
             moveTo(getEmptyIndex($(this)));
             drawPuzzle();
+        });
+
+        // Hover
+        $(this).on('mouseenter', function() {
+            let $this = $(this);
+            if(getEmptyIndex($this) !== null) {
+                $this.addClass("movablepiece");
+            }
+        });
+
+        $(this).on('mouseleave', function() {
+            let $this = $(this);
+            $(this).removeClass("movablepiece");
         });
     });
 

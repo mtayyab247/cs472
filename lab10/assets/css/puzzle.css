@@ -24,6 +24,9 @@ body, button {
 	height: 90px;
 	position: absolute;
 }
+.puzzlepiece:last-child {
+	border-color: transparent;
+}
 
 /* This class should be applied to a puzzle piece that can be moved. */
 .movablepiece:hover {
