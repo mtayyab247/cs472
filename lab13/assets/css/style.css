@@ -1,0 +1,19 @@
+
+* {
+    font-family: tahoma;
+}
+h3 {
+    text-align: center;
+}
+
+form.simple-calc {
+    width: 320px;
+    margin: 0 auto;
+}
+.simple-calc .form-field-wrapper {
+    padding: 10px;
+    width: 100%;
+}
+.simple-calc .form-field-wrapper input, .simple-calc .form-field-wrapper select {
+    float: right;
+}
