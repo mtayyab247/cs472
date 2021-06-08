@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title Dictionary Project
+        link(rel='stylesheet', href='css/dict.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='js/dict.js')
+    body
+        div.header
+            h3 WAP Online Dictionary
+        div.menubar
+            label Term:
+            input(type="text" id="term")
+            button(type="button" id="lookup") Lookup
+        div.results
+            ul.result-list
+        

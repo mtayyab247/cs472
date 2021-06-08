@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    font-family: tahoma;
+}
+
+.header {
+    background-color: #cecece;
+    padding: 5px 15px;
+}
+.header h3 {
+    margin: 0;
+}
+
+.menubar {
+    background-color: #d8d8d8;
+    padding: 0px 15px;
+}
+.menubar button {
+    margin-left: 10px;
+}
+
+.results ul.result-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.results ul.result-list li {
+    padding: 5px 0px;
+}
