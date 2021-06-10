@@ -17,6 +17,8 @@ connection.connect(function(err) {
     console.log('Connected to the MySQL server.');
 });
 
+
+
 let getSearchResult = function(req, res) {
     let query = "SELECT * From entries.entries WHERE word='" + req.query.term + "'";
 

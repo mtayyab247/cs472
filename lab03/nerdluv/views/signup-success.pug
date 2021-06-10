@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        title Nerdluv Sign-up Success
+        meta(name="description" content="Nerdluv Sign-up Page ")
+        meta(charset="utf-8")
+        link(href="css/nerdluv.css" rel="stylesheet")
+    body
+        include header.pug
+
+        div
+            h1 Welcome!
+            p Welcome to Nerdluv, #{username}
+            p Now
+                span
+                    a(href="/matchesform")  login to see your matches!
+        
+        include footer.pug

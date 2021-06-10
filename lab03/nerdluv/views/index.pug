@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        title Nerd Luv
+        meta(charset='utf-8')
+        link(href='/images/heart.gif' type='image/gif' rel='shortcut icon')
+        link(href='css/style.css' type='text/css' rel='stylesheet')
+        link(href='css/nerdluv.css' type='text/css' rel='stylesheet')
+    
+    body
+        include ./header.pug
+        div
+            h1 Welcome!
+            ul
+                li
+                    if(signup)
+                        include ./signup.pug
+                    else
+                        a(href='/signup')
+                            img(src='http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/4/signup.gif' alt='icon')
+                            | Sign up for a new account
+                li
+                    if(matchup)
+                        //- include ./matchesform.pug 
+                    else
+                    a(href='http://localhost:1000/matches')
+                        img(src='http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/4/heartbig.gif' alt='icon')
+                        | Check your matches
+                    
+        
+        include footer.pug

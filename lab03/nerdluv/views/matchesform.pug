@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title Nerdluv Find Matches 
+        meta(name="description" content="Nerdluv Sign-up Page ")
+        meta(charset="utf-8")
+        link(href="css/nerdluv.css" rel="stylesheet")
+    body
+        include header.pug
+
+        form(action='/findmatch-submit' method='get')
+            fieldset
+                legend Returning User: 
+                .form-data
+                    label
+                        strong Name:
+                    input(type='text' size='16' name='name')
+                input(type='submit' value='View my Matches')
+
+        include footer.pug

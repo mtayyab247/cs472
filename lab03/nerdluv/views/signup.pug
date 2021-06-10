@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+    head
+        title Nerdluv Sign-up Page
+        meta(name="description" content="Nerdluv Sign-up Page ")
+        meta(charset="utf-8")
+        link(href="css/signup.css" rel="stylesheet")
+        link(href="css/nerdluv.css" rel="stylesheet")
+
+    body.signup-page
+        include ./header.pug
+        div.signup-form-wrapper
+            form.signup-form(action="/signupp" method="POST")
+                div.field-wrapper.form-title
+                    label New User Signup:
+                
+                div.field-wrapper.name
+                    label Name:
+                    div.field
+                         input( type="text" name="name")
+
+                div.field-wrapper.gender
+                    label Gender:
+                    div.field
+                        input( type="radio" name="gender" value="M")
+                        label Male
+                        input( type="radio" name="gender" value="F")
+                        label Female
+
+                div.field-wrapper.age
+                    label Age:
+                    div.field
+                         input( type="number" min="1" name="age")
+
+                div.field-wrapper.pt
+                    label Personality Type:
+                    div.field
+                        input( type="text" name="pt")
+                        <p class="pt">(<span>Don't know your personality type?</span>)</p>
+                            
+
+                div.field-wrapper.fos
+                    label Favorte OS:
+                    div.field
+                        select(name="fos")
+                            option(value="Windows") Windows
+                            option(value="Linux") Linux
+                            option(value="MacOS") MacOS
+
+                div.field-wrapper.sa
+                    label Seeking Age:
+                    div.field
+                        input( type="number" min="1" name="min" placeholder="min")
+                        p to
+                        input( type="number" min="2" name="max" placeholder="max")
+
+                div.field-wrapper.signup
+                     input.btn.btn-signup(type="submit" value="Sign Up")
+        
+
+        include footer.pug
+    
